@@ -52,6 +52,19 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				gaming: {
+					purple: 'hsl(var(--gaming-purple))',
+					blue: 'hsl(var(--gaming-blue))',
+					green: 'hsl(var(--gaming-green))',
+					orange: 'hsl(var(--gaming-orange))',
+					red: 'hsl(var(--gaming-red))'
+				},
+				difficulty: {
+					beginner: 'hsl(var(--difficulty-beginner))',
+					easy: 'hsl(var(--difficulty-easy))',
+					medium: 'hsl(var(--difficulty-medium))',
+					hard: 'hsl(var(--difficulty-hard))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -67,6 +80,16 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-success': 'var(--gradient-success)',
+				'gradient-warning': 'var(--gradient-warning)',
+				'gradient-danger': 'var(--gradient-danger)'
+			},
+			boxShadow: {
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)'
 			},
 			keyframes: {
 				'accordion-down': {
