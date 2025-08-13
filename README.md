@@ -1,73 +1,173 @@
-# Welcome to your Lovable project
+# CodeWars Challenge Guide Tracker
 
-## Project info
+A beautiful, interactive web application to track your progress through coding challenges and achieve your 300-point goal on CodeWars.
 
-**URL**: https://lovable.dev/projects/e1a194d6-30a5-48fa-8508-7772665ac030
+## 🚀 Features
 
-## How can I edit this code?
+- **Progress Tracking**: Monitor your journey towards 300 points
+- **Pre-selected Problems**: Track completion of 75 beginner-level problems (150 points)
+- **Flexible Points System**: Choose your own problems across different difficulty levels
+- **Interactive Shopping Cart**: Manage coding resources and materials
+- **Beautiful UI**: Dark theme with gaming-inspired design
+- **Responsive Design**: Works perfectly on desktop and mobile devices
 
-There are several ways of editing your application.
+## 🎯 Point System
 
-**Use Lovable**
+### Pre-selected Problems (150 points)
+- 75 beginner problems × 2 points each
+- Covers fundamentals: loops, conditionals, data types, etc.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e1a194d6-30a5-48fa-8508-7772665ac030) and start prompting.
+### Flexible Points (150 points)
+- **Beginner (8 kyu)**: 2 points per problem
+- **Easy (7 kyu)**: 8 points per problem  
+- **Medium (6 kyu)**: 32 points per problem
+- **Hard (5 kyu)**: 128 points per problem
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📚 Resources
 
-**Use your preferred IDE**
+The app includes links to essential coding resources:
+- CodeWars official documentation
+- Algorithm practice platforms
+- Community forums and discussions
+- Progress tracking spreadsheets
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS, shadcn/ui components
+- **Build Tool**: Vite
+- **Backend**: Supabase (authentication & database)
+- **State Management**: TanStack Query
+- **Routing**: React Router
+- **Icons**: Lucide React
 
-Follow these steps:
+## 🏃‍♂️ Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd codewars-challenge-tracker
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📖 How to Use
 
-**Use GitHub Codespaces**
+1. **Track Pre-selected Problems**: Use the progress tracker to mark completed beginner problems
+2. **Monitor Flexible Points**: Adjust counts for different difficulty levels as you solve problems
+3. **View Resources**: Access helpful links and documentation
+4. **Reset Progress**: Clear all progress when starting over
+5. **Shopping Cart**: Manage coding books, courses, and other learning materials
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design System
 
-## What technologies are used for this project?
+The app uses a cohesive design system with:
+- **Primary Colors**: Purple gradient theme
+- **Dark Mode**: Gaming-inspired dark interface
+- **Semantic Tokens**: Consistent color and spacing system
+- **Responsive Layout**: Mobile-first design approach
 
-This project is built with:
+## 📈 Progress Features
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Real-time progress calculation
+- Visual progress bars
+- Completion percentages
+- Point breakdowns by difficulty
+- Interactive controls for updating progress
 
-## How can I deploy this project?
+## 🛍️ Shopping Cart Features
 
-Simply open [Lovable](https://lovable.dev/projects/e1a194d6-30a5-48fa-8508-7772665ac030) and click on Share -> Publish.
+- Add/remove coding resources
+- Quantity adjustment with +/- buttons
+- Like/unlike items with heart button
+- Dynamic total price calculation
+- Clean, intuitive interface
 
-## Can I connect a custom domain to my Lovable project?
+## 🔧 Development
 
-Yes, you can!
+### Available Scripts
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Project Structure
+```
+src/
+├── components/          # Reusable UI components
+│   ├── ui/             # shadcn/ui components
+│   ├── HeroSection.tsx # Landing page hero
+│   ├── PointsSystem.tsx # Points explanation
+│   ├── ProgressTracker.tsx # Progress tracking
+│   ├── ResourceLinks.tsx # External resources
+│   └── ShoppingCart.tsx # Shopping functionality
+├── pages/              # Page components
+├── hooks/              # Custom React hooks
+├── lib/                # Utility functions
+└── main.tsx           # App entry point
+```
+
+## 🚀 Deployment
+
+This project is ready to deploy on any modern hosting platform:
+
+- **Lovable**: Click "Publish" in the Lovable editor
+- **Vercel**: Connect your GitHub repo to Vercel
+- **Netlify**: Deploy directly from GitHub
+- **Other platforms**: Build with `npm run build` and deploy the `dist` folder
+
+## 📱 Mobile Support
+
+Fully responsive design that works seamlessly across:
+- Desktop computers
+- Tablets
+- Mobile phones
+- Different screen orientations
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Links
+
+- **Live Demo**: [Your deployed app URL]
+- **CodeWars Profile**: [Your CodeWars profile]
+- **Challenge Guide**: [Google Sheets link]
+- **Documentation**: [Additional docs if any]
+
+## 🎯 Goals & Milestones
+
+- [ ] Complete 75 pre-selected problems (150 points)
+- [ ] Earn 150 flexible points through chosen problems
+- [ ] Reach 300 total points
+- [ ] Achieve target CodeWars rank
+- [ ] Master fundamental programming concepts
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS. Happy coding! 🎉
